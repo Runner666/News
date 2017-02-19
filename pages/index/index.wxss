@@ -1,6 +1,5 @@
 /**index.wxss**/
 
-
 .userinfo {
   display: flex;
   flex-direction: column;
@@ -14,23 +13,26 @@
   border-radius: 50%;
 }
 
-.userinfo text{
+.userinfo text {
   font-size: 35rpx;
 }
 
 .usermotto {
   margin-top: 200rpx;
   border: 1px solid #405f80;
-  width: 200rpx;
-  height: 80rpx;
+  width: 250rpx;
+  height: 60rpx;
   border-radius: 5px;
-  text-align: center;
+  padding-top: 16rpx;
+  display: flex;
+  justify-content: space-around;
 }
 
 .usermotto text {
   font-size: 30rpx;
 }
-page{
-    height: 100%;
-    background-color:#b3d4db;
+
+page {
+  height: 100%;
+  background-color: #b3d4db;
 }

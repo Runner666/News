@@ -36,8 +36,9 @@ Page({
   onScrollLower: function (event) {
     var nextUrl = this.data.requestUrl +
       "?start=" + this.data.totalCount + "&count=20";
-    util.http(nextUrl, this.processDoubanData)
-    wx.showNavigationBarLoading()
+    util.http(nextUrl, this.processDoubanData);
+    //正在加载数据的等待提示图标
+    wx.showNavigationBarLoading();
   },
 
   onPullDownRefresh: function (event) {
@@ -83,6 +84,7 @@ Page({
     });
 
     this.data.totalCount += 20;
+    //数据加载完毕，隐藏正在加载图标
     wx.hideNavigationBarLoading();
     wx.stopPullDownRefresh()
   },

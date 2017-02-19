@@ -9,7 +9,7 @@ Page({
   onLoad: function (option) {
     //接受post页面传过来的数据（id）
     var postId = option.id;
-    //将接接收的id设置到当前数据库中
+    //将接收的id设置到当前数据库中
     this.data.currentPostId = postId;
     //从基础数据库data中调数据
     var postData = postsData.postList[postId];

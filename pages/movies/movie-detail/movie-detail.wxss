@@ -23,7 +23,7 @@
 
 .main-title{
     font-size: 19px;
-    color:#fff;
+    color:#333333;
     font-weight:bold;
     margin-top: 50rpx;
     margin-left: 40rpx;

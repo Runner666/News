@@ -96,8 +96,10 @@ Page({
         coverageUrl: subject.images.large,
         movieId: subject.id
       }
+      //使用数组的push方法，将临时对象temp放入数组中
       movies.push(temp)
     }
+    //动态赋值
     var readyData = {};
     readyData[settedKey] = {
       categoryTitle: categoryTitle,
